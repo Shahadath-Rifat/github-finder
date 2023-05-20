@@ -1,0 +1,203 @@
+@import url(./reset.css);
+
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-light-gray: #f9f9f9;
+    --app--purple: #7339ac;
+    --app-white:#fff;
+    --app-lightgrey: #9a9a9a ;
+    --app-black:#000 ;
+}
+
+body {
+    background: linear-gradient(to right, #0F2027, #000000, #0F2027);
+}
+
+/*---------------------------Search--------------------*/
+
+
+.search-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-form h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+.search-form input[type=text] {
+    height: 40px;
+    width: 250px;
+    margin-right: 17px;
+    padding: 10px;
+    border: 1px solid rgb(248, 243, 243);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.search-form input[type=submit] {
+    height: 40px;
+    width: 110px;
+    background-color: #e68020;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+
+.search-form input[type=submit]:hover {
+    background-color: #bc610b;
+}
+
+
+/*---------------------------Repositories--------------------*/
+
+.profile {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.profileWrapper {
+    border: 1px solid #fff;
+    padding: 20px;
+   
+}
+
+.myRepos {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 21%;
+    text-align: left;
+}
+
+img {
+    margin: auto;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-weight: 500;
+    color: var(--app-white);
+}
+
+span {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: #e44611;
+    font-weight: 600;
+    font-size: 19px;
+    margin-top: 15px;
+    margin-left: 11px;
+}
+
+.p {
+    display: flex;
+    text-align: center;   
+    margin-bottom: 20px;
+    margin-left: 26px;
+}
+
+.profile p {
+    width: 100px;
+    color: #fff;
+}
+
+button {
+    height: 40px;
+    width: 180px;
+    background-color: #27cb06;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+
+button:hover {
+    background-color: #1e730d;
+}
+
+h2 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 39px;
+    font-weight: 600;
+    color: var(--app-white);
+    margin-top: 40px;
+}
+
+h3 {
+    color: #27cb06;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.repo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:#292929 ;
+    width: 920px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.repo:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.repo-description p {
+    color: #fff;
+    text-overflow:initial;
+    width: 680px;
+
+}
+  
+.date {
+    color:#f4eeec;
+    text-overflow: ellipsis;
+}
+
+.errorMsg {
+    color: var(--app-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
